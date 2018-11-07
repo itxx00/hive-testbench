@@ -1,5 +1,7 @@
 --set hive.enforce.bucketing=true;
 --set hive.enforce.sorting=true;
+set hive.execution.engine=mr;
+set hive.default.fileformat=TextFile;
 set hive.exec.dynamic.partition.mode=nonstrict;
 set hive.exec.max.dynamic.partitions.pernode=1000000;
 set hive.exec.max.dynamic.partitions=1000000;
